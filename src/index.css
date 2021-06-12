@@ -13,7 +13,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -136,6 +136,63 @@
   padding: 10px;
 }
 
+.form-create-routine {
+  max-width: 400px;
+  margin-top: 10px;
+  margin-left: 34px;
+}
+
+.form-create-routine label {
+  text-align: left;
+  display: block;
+}
+
+.form-create-routine h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.form-create-routine input {
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.form-create-routine button {
+  margin-top: 10px;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkbox-input {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.checkbox-label {
+  position: absolute;
+  left: 70px;
+  top: 283px;
+}
+
+.button {
+  margin-top: 10px;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 /*Logout Page */
 
 .logout-page {
@@ -164,9 +221,87 @@
 
 .routines {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+}
+.routines h1 {
+  width: 100%;
 }
 
 .routine-cards {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #f1e73421;
+  margin: 10px;
+  padding: 0 5px 5px;
+  border: 2px solid #f1356d;
+  height: auto;
+  width: 400px;
+}
+
+.routine-cards h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.routine-cards button {
+  max-width: 15%;
+  margin-top: auto;
+  margin-left: 0.4rem;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.included-activities {
+  text-indent: 20px;
+}
+
+.my-routines {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 10px;
+  width: 100%;
+}
+
+.my-routines .routine-form {
+  width: 100%;
+}
+
+/* activities */
+
+.activities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+}
+
+.activities h1 {
+  width: 100%;
+}
+
+.activities form {
+  width: 100%;
+}
+
+.activities-cards {
+  background: #f1e73421;
+  margin: 10px;
+  padding: 0 5px 5px;
+  border: 2px solid #f1356d;
+  height: auto;
+  width: 400px;
+}
+
+.activities-cards p {
+  margin: 0.5rem;
+  padding: 0.5rem;
 }

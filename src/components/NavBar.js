@@ -7,7 +7,7 @@ const Navbar = ({ token }) => {
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/routines">Routines</Link>
-        <Link to="/myroutines">My Routines</Link>
+        {token && <Link to="/myroutines">My Routines</Link>}
         <Link to="/activities">Activities</Link>
         {!token && <Link to="/login">Login/Register</Link>}
         {token && <Link to="/logout">Log Out</Link>}

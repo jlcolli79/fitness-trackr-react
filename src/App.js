@@ -6,6 +6,8 @@ import LoginForm from "./components/LoginForm";
 import Register from "./components/Register";
 import Logout from "./components/Logout";
 import Routines from "./components/Routines";
+import MyRoutines from "./components/MyRoutines";
+import Activities from "./components/Activities";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(localStorage.getItem("username"));
@@ -20,10 +22,16 @@ function App() {
             <Route exact path="/">
               <Home currentUser={currentUser} />
             </Route>
-            <Route exact path="/routines">
+            <Route path="/routines">
               <Routines />
             </Route>
-            <Route exact path="/login">
+            <Route path="/myroutines">
+              <MyRoutines token={token} currentUser={currentUser} />
+            </Route>
+            <Route path="/activities">
+              <Activities />
+            </Route>
+            <Route path="/login">
               <LoginForm setToken={setToken} setCurrentUser={setCurrentUser} />
             </Route>
             <Route path="/Register">
